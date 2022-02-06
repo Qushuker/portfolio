@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<!--HEADER-->
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="user">
+                    <div class="user_avatar">
+                        <img class="circle" src="https://place-hold.it/57x57">
+                    </div>
+                    <div class="user_content">
+                        <div class="user_name">Vladimir<br>Zakharov</div>
+                        <div class="user_prof">Front-end developer</div>
+                    </div>
+                </div>
+                <nav class="nav" id="nav">
+                    <a class="nav_link" href="#works">work</a>
+                    <a class="nav_link" href="#about">about me</a>
+                    <a class="nav_link" href="#blog">blog</a>
+                    <a class="nav_link" href="#">contact</a>
+                    <a class="nav_link nav_link--btn" href="#" data-modal="#modal_hire_me">hire me</a>
+                </nav>
+                <button class="burger" type="button" id="navToggle">
+                    <img class="burger_icon" src="img/menu.png" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+<!--EMPTY-->
+    <section class="empty"></section>
+<!--INTRO-->
+    <section class="intro">
+        <div class="container">
+            <div class="intro_inner">
+                <div class="intro_content">
+                    <h2 class="intro_subtitle">Hello i'm</h2>
+                    <h1 class="intro_title">Vladimir Zakharov</h1>
+                    <div class="intro_text">Front-end developer</div>
+                    <div class="social">
+                        <a href="#" class="social_link"><img class="slpic" src="img/soclinks/facebook.png" alt=""></a>
+                        <a href="#" class="social_link"><img class="slpic" src="img/soclinks/twitter.png" alt=""></a>
+                        <a href="#" class="social_link"><img class="slpic" src="img/soclinks/instagram.png" alt=""></a>
+                        <a href="#" class="social_link"><img class="slpic" src="img/soclinks/telegram.png" alt=""></a>
+
+                    </div>
+                    <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+                    <button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
+                </div>
+                <img class="intro_photo" src="img/top/designer_photo.png" alt="">
+
+            </div>
+        </div>
+    </section>
+<!--Works-->
+    <div class="works" id="works">
+        <div class="container">
+            <div class="works_nav">
+                <a href="#" class="works_nav_link" data-filter="all">All</a>
+                <a href="#" class="works_nav_link" data-filter="app">App</a>
+                <a href="#" class="works_nav_link" data-filter="website">Websites</a>
+                <a href="#" class="works_nav_link" data-filter="interaction">Interaction</a>
+            </div>
+            <div class="portfolio">
+                <div class="portfolio_col" data-cat="website">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work_image" src="img/work/1/1.png" alt="">
+                        <div class="work_content">
+                            <div class="work_cat">website</div>
+                            <div class="work_title">StartUp
+                            <time class="work_date" datetime="2019-11-22 19:00">2022</time></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio_col" data-cat="app">
+                    <div class="work" data-modal="#modal_project_2">
+                        <img class="work_image" src="img/ground.png" alt="">
+                        <div class="work_content">
+                            <div class="work_cat">app</div>
+                            <div class="work_title">Snake
+                            <time class="work_date" datetime="2019-11-22 19:00">2022</time></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio_col" data-cat="interaction">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work_image" src="img/work/cover_photo.png" alt="">
+                        <div class="work_content">
+                            <div class="work_cat">interaction</div>
+                            <div class="work_title">Project title
+                            <time class="work_date" datetime="2019-11-22 19:00">2018</time></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio_col" data-cat="website">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work_image" src="img/work/cover_photo.png" alt="">
+                        <div class="work_content">
+                            <div class="work_cat">website</div>
+                            <div class="work_title">Project title
+                            <time class="work_date" datetime="2019-11-22 19:00">2018</time></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio_col" data-cat="interaction">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work_image" src="img/work/cover_photo.png" alt="">
+                        <div class="work_content">
+                            <div class="work_cat">interaction</div>
+                            <div class="work_title">Project title
+                            <time class="work_date" datetime="2019-11-22 19:00">2018</time></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio_col" data-cat="app">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work_image" src="img/work/cover_photo.png" alt="">
+                        <div class="work_content">
+                            <div class="work_cat">app</div>
+                            <div class="work_title">Project title
+                            <time class="work_date" datetime="2019-11-22 19:00">2018</time></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text_center">
+                <a id="about" href="#" class="btn  btn--sm">LOAD MORE WORK</a>
+            </div>
+        </div>
+    </div>
+<!--About Me-->
+    <section class="about" >
+       <div class="container">
+           <div class="about_inner">
+                <div class="about_photo">
+                    <img class="img" src="img/aboutme/designer_photo2.png" alt="">
+                </div>
+                <div class="about_content">
+                    <h2 class="about_subtitle">ABOUT ME</h2>
+                    <h1 class="about_title">WHO AM I</h1>
+                    <div class="about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt.</div>
+                    <a href="#" class="btn" data-modal="#modal_hire_me">HIRE ME</a>
+                    <a href="#" class="btn" data-modal="#modal_resume">SEE MY RESUME</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--Reviews-->
+    <div class="reviews">
+        <div class="container">
+            <div class="reviews_item">
+                <div class="reviews_text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+                <div class="reviews_author">
+                        <img class="reviews_photo circle" src="https://place-hold.it/57x57">
+                        <div class="reviews_name">Edward M.</div>
+                        <div class="reviews_company">Marketing House</div>
+                        <div class="rew_rating">
+                        <img class="star" width="=13" height="13" src="img/star.png" alt="">
+                        <img class="star" width="=13" height="13" src="img/star.png" alt="">
+                        <img class="star" width="=13" height="13" src="img/star.png" alt="">
+                        <img class="star" width="=13" height="13" src="img/star.png" alt="">
+                        <img class="star star--unactive" width="=13" height="13" src="img/star.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--Read Me-->
+    <div class="readme" id="blog">
+        <div class="container">
+            <div class="readme_inner">
+                <div class="readme_header">
+                    <h1 class="readme_title">READ ME</h1>
+                    <div class="readme_subtitle">Sometimes i write something smart</div>
+                </div>
+                <div class="readme_content">
+                    <div class="readme_block">
+                        <div class="readme_photo">
+                            <time class="readme_date">10<br>June</time>
+                            <img class="readme_preview" src="img/blog/cover_photo2.png" alt="">
+                        </div>
+                        <div class="readme_block_name">
+                            TEN THE BEST APP IN 2017
+                        </div>
+                        <div class="readme_block_cat">
+                            Category
+                        </div>
+                        <div class="readme_block_text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.
+                        </div>
+                        <a href="#" class="btn btn--sm">READ MORE</a>
+                    </div>
+                    <div class="readme_block">
+                        <div class="readme_photo">
+                           <time class="readme_date">10<br>June</time>
+                            <img class="readme_preview" src="img/blog/cover_photo2.png" alt="">
+                        </div>
+                        <div class="readme_block_name">
+                            WEBSITE INSPIRATION
+                        </div>
+                        <div class="readme_block_cat">
+                            Category
+                        </div>
+                        <div class="readme_block_text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.
+                        </div>
+                        <a href="#" class="btn btn--sm">READ MORE</a>
+                    </div>
+                    <div class="readme_block">
+                        <div class="readme_photo">
+                           <time class="readme_date">10<br>June</time>
+                            <img class="readme_preview" src="img/blog/cover_photo2.png" alt="">
+                        </div>
+                        <div class="readme_block_name">
+                            CHANGES IN SOCIAL MEDIA
+                        </div>
+                        <div class="readme_block_cat">
+                            Category
+                        </div>
+                        <div class="readme_block_text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.
+                        </div>
+                        <a href="#" class="btn btn--sm">READ MORE</a>
+                    </div>
+                </div>
+                <div class="readme_continue"><a class="continue_link" href="#">See more posts</a></div>
+            </div>
+        </div>
+    </div>
+<!--Footer-->
+    <footer class="footer">
+        <div class="container">
+           <div class="footer_inner">
+                <div class="footer_left">
+                    <div class="footer_text">(c) 2018 UI43 - Free Templates</div>
+                    <div class="footer_links"></div>
+                </div>
+                <div class="footer_nav">
+                        <a class="nav_link footer_link" href="#">work</a>
+                        <a class="nav_link footer_link" href="#">about me</a>
+                        <a class="nav_link footer_link" href="#">blog</a>
+                        <a class="nav_link footer_link" href="#">contact</a>
+                        <a class="nav_link footer_link" href="#" data-modal="#modal_hire_me">hire me</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!--Modals-->
+    <div class="modal" id="modal_project_1">
+        <div class="modal_dialog">
+            <button class="modal_close" type="button" data-close><img class="modal_close_image" src="img/cancel.png" alt="Close"></button>
+            <div class="modal-work">
+                <div class="modal-work_preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work_photo"  src="img/work/1/1.png" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work_photo"  src="img/work/1/2.png" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work_photo"  src="img/work/1/3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work_content">
+                    <div class="modal-work_header">
+                        <h3 class="modal-work_title">StartUp</h3>
+                        <div class="modal-work_info">Category <span class="palka">|</span> 2022</div>
+                    </div>
+                    <div class="modal-work_client">
+                        <div class="modal-work_client_title">Client:</div>
+                        <div class="modal-work_client_company">Creative Agency</div>
+                    </div>
+                    <div class="modal-work_text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla egestas, dignissim elit at, imperdiet eros.</p><br><a target="_blank" class="btn" href="https://qushuker.github.io/Startup/">Open site</a>
+                    </div>
+                    <div class="modal-work_footer">
+                        <button class="modal-work_btn modal-work_btn--prev slickPrev" type="button">Previeus</button>
+                        <button class="modal-work_btn modal-work_btn--next slickNext" type="button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_2">
+        <div class="modal_dialog">
+            <button class="modal_close" type="button" data-close><img class="modal_close_image" src="img/cancel.png" alt="Close"></button>
+            <div class="modal-work">
+                <div class="modal-work_preview">
+                    <canvas id="game" width="608px" height="608px"></canvas>
+                </div>
+                <div class="modal-work_content">
+                    <div class="modal-work_header">
+                        <h3 class="modal-work_title">Snake</h3>
+                        <div class="modal-work_info">Category <span class="palka">|</span> 2022</div>
+                    </div>
+                    <div class="modal-work_client">
+                        <div class="modal-work_client_title">Client:</div>
+                        <div class="modal-work_client_company">Creative Agency</div>
+                    </div>
+                    <div class="modal-work_text">
+                        W - up<br>
+                        A - left<br>
+                        S - down<br>
+                        D - right<br>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_resume">
+        <div class="modal_dialog">
+            <button class="modal_close" type="button" data-close><img class="modal_close_image" src="img/cancel.png" alt="Close"></button>
+            <div class="modal_content">
+                <div class="text_center">
+                    <h3 class="modal_title text-center">RESUME</h3>
+                </div>
+                <div class="text_center">
+                    <a class="btn btn--thin" href="#">DOWNLOAD PDF</a>
+                    <a class="btn btn--thin" href="#">PRINT</a>
+                </div>
+                <div class="timeline">
+                    <div class="timeline_col timeline_col--left">
+                        <h4 class="timeline_title">Experience</h4>
+
+                        <div class="timeline_item">
+                            <time class="timeline_date" datetime="11-21-2019">2017 - <b>Present</b></time>
+                            <h5 class="timeline_subtitle">Freelancer</h5>
+                            <div class="timeline_position">Art Director</div>
+                            <div class="timeline_text"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></div>
+                        </div>
+                        <div class="timeline_item">
+                            <time class="timeline_date" datetime="11-21-2019">2017 - <b>Present</b></time>
+                            <h5 class="timeline_subtitle">Freelancer</h5>
+                            <div class="timeline_position">Art Director</div>
+                            <div class="timeline_text"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></div>
+                        </div>
+                        <div class="timeline_item">
+                            <time class="timeline_date" datetime="11-21-2019">2017 - <b>Present</b></time>
+                            <h5 class="timeline_subtitle">Freelancer</h5>
+                            <div class="timeline_position">Art Director</div>
+                            <div class="timeline_text"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></div>
+                        </div>
+                    </div>
+                    <div class="timeline_col timeline_col--right">
+                        <h4 class="timeline_title">Education</h4>
+                        <div class="timeline_item">
+                            <time class="timeline_date" datetime="11-21-2019">2005 - 2010</time>
+                            <h5 class="timeline_subtitle">Freelancer</h5>
+                            <div class="timeline_position">LA University, USA</div>
+                            <div class="timeline_text"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></div>
+                        </div>
+                        <div class="timeline_item">
+                            <time class="timeline_date" datetime="11-21-2019">2017 - <b>Present</b></time>
+                            <h5 class="timeline_subtitle">Freelancer</h5>
+                            <div class="timeline_position">Art Director</div>
+                            <div class="timeline_text"><p></p></div>
+                        </div>
+
+                            <h4 class="timeline_title">Skills</h4>
+                            <div class="progress-bar">
+                                <div class="progress-bar_item">
+                                    <div class="progress-bar_left">
+                                        <div class="progress-bar_title">UI/UX Design</div>
+                                    </div>
+                                    <div class="progress-bar_right">
+                                        <div class="progress-bar_bar">
+                                            <div class="progress-bar_progress" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progress-bar_item">
+                                    <div class="progress-bar_left">
+                                        <div class="progress-bar_title">UI/UX Design</div>
+                                    </div>
+                                    <div class="progress-bar_right">
+                                        <div class="progress-bar_bar">
+                                            <div class="progress-bar_progress" style="width: 60%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progress-bar_item">
+                                    <div class="progress-bar_left">
+                                        <div class="progress-bar_title">UI/UX Design</div>
+                                    </div>
+                                    <div class="progress-bar_right">
+                                        <div class="progress-bar_bar">
+                                            <div class="progress-bar_progress" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progress-bar_item">
+                                    <div class="progress-bar_left">
+                                        <div class="progress-bar_title">UI/UX Design</div>
+                                    </div>
+                                    <div class="progress-bar_right">
+                                        <div class="progress-bar_bar">
+                                            <div class="progress-bar_progress" style="width: 50%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progress-bar_item">
+                                    <div class="progress-bar_left">
+                                        <div class="progress-bar_title">UI/UX Design</div>
+                                    </div>
+                                    <div class="progress-bar_right">
+                                        <div class="progress-bar_bar">
+                                            <div class="progress-bar_progress" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="timeline_title">Awards</h4>
+                            <div class="timeline_item">
+                            <time class="timeline_date" datetime="11-21-2019"><b>2019</b></time>
+                            <h5 class="timeline_subtitle">Freelancer</h5>
+                            <div class="timeline_position">LA University, USA</div>
+                            <div class="timeline_text"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></div>
+                        </div>
+                    </div>
+
+                </div>
+                    <div class="text_center">
+                        <a href="#" class="btn">HIRE ME</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_hire_me">
+        <div class="modal_dialog modal_dialog--sm">
+            <button class="modal_close" type="button" data-close><img class="modal_close_image" src="img/cancel.png" alt="Close"></button>
+
+
+
+                <div class="contact">
+                    <div class="contact_left">
+                        <h3 class="modal_title mb-0">Let's talk!</h3>
+                        <div class="modal_subtitle">Call me or send me a request</div>
+                        <ul class="contact_info">
+                            <li class="contact_info-item">
+                                <img class="contact_info-icon" width="12px" src="img/phone-call.png" alt="">
+                                Number
+                            </li>
+                            <li class="contact_info-item">
+                                <img class="contact_info-icon" width="12px" src="img/email.png" alt="">
+                                E-Mail
+                            </li>
+                        </ul>
+                        <form action="/" method="post">
+                            <div class="form_group">
+                                <label for="input-email" class="form_label">Adress e-mail</label>
+                                <input type="text" class="form_input" name="input-email" id="input-email" placeholder="Adress e-mail">
+                            </div>
+                            <div class="form_group">
+                                <label for="input-email" class="form_label">Request</label>
+                                <textarea class="form_textarea" name="input-text" id="input-text" cols="30" placeholder="Type your request..."></textarea>
+                            </div>
+
+                            <div class="text_right">
+                                <button class="btn" type="submit">SEND</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="contact_right">
+
+                    </div>
+                </div>
+
+
+
+        </div>
+    </div>
+
+
+<!--JS-->
+    <script src="js/slick.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/snake.js"></script>
+</body>
+</html>
